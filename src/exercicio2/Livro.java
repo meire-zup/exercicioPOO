@@ -8,19 +8,30 @@ public class Livro {
     private String autor;
     private String genero;
     private Long isbn;
-    Scanner scanner = new Scanner(System.in);
 
-    public void registrarLivro() {
+    public void registrarLivro(Long isbnInformado) {
 
-        System.out.println("Informe o isbn do livro: ");
-
-        Long isbnInformado = scanner.nextLong();
-
-        System.out.println("Livro registrado com o ISBN " + isbnInformado);
-
-
+        System.out.println("O livro foi registrado com o ISBN [" + isbnInformado + "]");
 
     }
 
+    public void registrarLivro(Long isbnInformado, String nome){
+
+        System.out.println("O livro foi registrado com o ISBN [" + isbnInformado + "] e o nome [" + nome + "]");
+
+    }
+
+    public void registrarLivro(Long isbnInformado, String nome, String genero){
+
+        System.out.println("O livro foi registrado com o ISBN [" + isbnInformado + "], o nome [" + nome + "] e " +
+                "o gênero [" + genero + "]");
+
+    }
+    public void registrarLivro(Long isbnInformado, String nome, String genero, String autor){
+
+        System.out.println("O livro foi registrado com o ISBN [" + isbnInformado + "], o nome [" + nome + "]" +
+                ", o gênero [" + genero + "] e o autor " + autor + "]");
+
+    }
 
 }
