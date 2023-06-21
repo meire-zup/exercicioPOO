@@ -68,4 +68,17 @@ public abstract class Carro {
 
     }
 
+    public void imprimeCarro (){
+
+        System.out.println("Você irá dirigir o carro:");
+        System.out.println("Marca: " + this.marca);
+        System.out.println("Ano: " + this.ano);
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Portas: " + this.portas);
+        System.out.println("Valor: " + this.valor);
+
+        iniciaPartidaMotor();
+
+    }
+
 }

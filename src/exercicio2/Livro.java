@@ -30,7 +30,7 @@ public class Livro {
     public void registrarLivro(Long isbnInformado, String nome, String genero, String autor){
 
         System.out.println("O livro foi registrado com o ISBN [" + isbnInformado + "], o nome [" + nome + "]" +
-                ", o gênero [" + genero + "] e o autor " + autor + "]");
+                ", o gênero [" + genero + "] e o autor [" + autor + "]");
 
     }
 
